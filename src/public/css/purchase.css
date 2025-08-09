@@ -1,0 +1,239 @@
+/* ====== 全ページ共通設定 ====== */
+body {
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+}
+
+/* ====== コンテナ（購入系） ====== */
+.purchase-container {
+    width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #f5f5f5;
+    text-align: left;
+}
+
+/* ====== タイトル ====== */
+.purchase-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* ====== ラベル ====== */
+.purchase-container label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+/* ====== 入力欄 ====== */
+.purchase-container input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* ====== ボタン ====== */
+.purchase-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* ====== エラーメッセージ ====== */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ====== レスポンシブ ====== */
+@media (min-width: 768px) and (max-width: 850px) {
+    .purchase-container {
+        width: 90%;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    .purchase-container input,
+    .purchase-container button,
+    .purchase-container label {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .purchase-container {
+        width: 500px;
+        margin: 100px auto;
+    }
+}
+
+/* ====== 購入レイアウト（2カラム） ====== */
+.purchase-wrapper {
+    max-width: 980px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+}
+
+/* 商品ヘッダ */
+.purchase-wrapper .product-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.purchase-wrapper .product-image {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    background: #eaeaea;
+}
+
+.purchase-wrapper .product-name {
+    font-size: 20px;
+    margin: 0 0 6px;
+}
+
+.purchase-wrapper .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* セクション */
+.section-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 24px 0;
+}
+
+.section-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 支払い方法 */
+.method-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.select {
+    min-width: 220px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-secondary {
+    padding: 8px 14px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 住所表示 */
+.address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.address-box {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 14px;
+    line-height: 1.7;
+}
+
+.link-change {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* 右カラム：サマリー */
+.purchase-summary {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 16px;
+    height: fit-content;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+/* ボタン共通 */
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+/* 住所編集ページ */
+.address-edit-container {
+    width: 500px;
+        margin: 80px auto;
+        padding: 30px;
+        background: #f5f5f5;
+        text-align: left;
+}
+
+.address-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.address-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.notice {
+    margin-top: 10px;
+    font-size: 13px;
+}

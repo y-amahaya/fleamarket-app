@@ -1,0 +1,300 @@
+/* ====== 全ページ共通設定 ====== */
+body {
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+}
+
+/* ====== コンテナ（フォーム系） ====== */
+.form-container {
+    width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #f5f5f5;
+    /* 背景統一で枠を消す */
+    text-align: left;
+}
+
+/* ====== タイトル ====== */
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* ====== ラベル ====== */
+.form-container label,
+.form-group label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+/* ====== 入力欄 ====== */
+.form-container input,
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* ====== ボタン ====== */
+button,
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.verify-button {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* ====== エラーメッセージ ====== */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ====== フォームフッター ====== */
+.form-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ====== プロフィール画像関連 ====== */
+.profile-image-container,
+.profile-image-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image-preview {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.image-upload-button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #f44336;
+    color: #f44336;
+    background: transparent;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ====== ヘッダー関連 ====== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.site-logo {
+    height: 40px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-form input {
+    padding: 6px 10px;
+    font-size: 14px;
+    width: 200px;
+}
+
+/* ====== ファイル入力非表示 ====== */
+input[type="file"] {
+    display: none;
+}
+
+/* ====== レスポンシブ ====== */
+@media (min-width: 768px) and (max-width: 850px) {
+    .form-container {
+        width: 90%;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    .form-container input,
+    .form-container button,
+    .form-container label {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .form-container {
+        width: 500px;
+        margin: 100px auto;
+    }
+}
+
+/* ===== プロフィールページ ===== */
+.profile-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-header-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.profile-username {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.profile-edit-btn {
+    padding: 10px 16px;
+    border: 1px solid #f44336;
+    color: #f44336;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.profile-edit-btn:hover {
+    opacity: 0.9;
+}
+
+/* タブ */
+.profile-tabs {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0 8px;
+}
+
+.profile-tabs a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #555;
+}
+
+.profile-tabs a.active {
+    color: #f44336;
+}
+
+/* 商品グリッド */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+    padding: 12px 0 40px;
+}
+
+.product-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.product-image-wrapper {
+    width: 100%;
+    height: 160px;
+    background: #f3f3f3;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.no-products {
+    padding: 32px 0 60px;
+    color: #777;
+    text-align: center;
+}
+
+/* ===== メール認証誘導画面 ===== */
+.verify-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.verify-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.verify-button:hover {
+    background-color: #bbb;
+}
+
+.resend-wrapper {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.resend-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
